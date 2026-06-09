@@ -1,0 +1,20 @@
+name: Question / Other
+description: General questions or anything that doesn't fit above
+labels: ["question"]
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: Your question or feedback
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform (if relevant)
+      options:
+        - Not applicable
+        - macOS
+        - Windows
+        - Linux
