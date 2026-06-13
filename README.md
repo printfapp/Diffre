@@ -1,8 +1,18 @@
+<p align="center">
+  <img src="public/logo.png" width="80" alt="Diffre logo" />
+</p>
+
 # Diffre
+
+> Pronounced like *differ*
 
 A fast, local file and folder diff tool — like Beyond Compare, built for the desktop.
 
-Powered by VS Code's Monaco editor for pixel-perfect syntax-highlighted diffs, with a clean dark UI and no telemetry.
+---
+
+## Screenshots
+
+![Diffre screenshot](public/images/screenshot.png)
 
 ---
 
@@ -26,6 +36,16 @@ Powered by VS Code's Monaco editor for pixel-perfect syntax-highlighted diffs, w
 - Refresh without losing the currently open file
 - Copy path from right-click context menu
 - Copy folder tree as ASCII text
+- Swap left and right sides in one click
+
+**Custom File Mapping**
+- Pair files with different names across folders (e.g. `ch01.md` ↔ `first chapter.md`)
+- Define extracting rules with Regex or JS scripts to match by canonical key
+- Manual pairing via Pick Counterpart for one-off cases
+- Paired files shown with ↔ icon in the directory tree
+
+**CLI**
+- Open diffs directly from the terminal: `diffre file1 file2` or `diffre dir1 dir2`
 
 **Configuration**
 - Global settings + per-session overrides
@@ -48,12 +68,6 @@ Go to the [Releases](../../releases) page and download the installer for your pl
 | macOS (Apple Silicon / Intel) | `.dmg` |
 | Windows | `.msi` or `.exe` |
 | Linux | `.AppImage` or `.deb` |
-
----
-
-## Screenshots
-
-_Coming soon._
 
 ---
 
