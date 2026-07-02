@@ -1,5 +1,33 @@
 # Changelog
 
+## v0.1.27
+
+### Bug Fixes
+- **Auto-updater now works.** Previous versions (0.1.23–0.1.26) never checked for updates due to a combination of a broken deploy pipeline, a Tauri v2 API change, and missing permissions. If you're on 0.1.26 or earlier, you'll need to manually download this update — after that, automatic updates will work as expected.
+
+---
+
+## v0.1.26
+
+### New Features
+- **Ruleset system**: save reusable sets of file-pairing rules globally and apply them across any session, with per-rule inline editing
+- **Equivalent term matching**: pair files with differently-named counterparts via term substitution (e.g. `about-authors` ≡ `关于作者`), works in either direction and with partial filename matches
+- **Image comparison**: side-by-side view for PNG/JPG/GIF/WebP and other image files, with an overlay mode to highlight pixel differences
+- **Lazy-loaded directory tree**: large directories now expand on demand instead of being scanned all at once, improving initial load time
+- **Session ignore inheritance**: session-level ignore patterns can now extend the global ignore list instead of fully replacing it
+- **More correct .gitignore handling**: nested `.gitignore` files, `~/.config/git/ignore`, and `.git/info/exclude` are now all respected
+
+### Bug Fixes
+- **Fixed the app getting stuck on a loading screen after a fresh install.** The bundled code editor's assets were being blocked by the app's content security policy; the editor is now bundled locally instead of loaded from a CDN
+- Fixed confirmation dialogs being unreliable on Linux; replaced with a consistent in-app dialog
+- Fixed directory paths with a trailing slash producing malformed file paths
+- Fixed several directory-scanning edge cases around hidden files and nested ignore rules
+
+### Other
+- Added optional, anonymized usage analytics (which features get used) to help prioritize future development
+
+---
+
 ## v0.1.25
 
 ### New Features
