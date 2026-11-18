@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.29
+
+### Bug Fixes
+- **Linux: the title bar close button now works.** Clicking the window close button on Linux previously did nothing; the window now closes normally (still prompting to confirm when there are unsaved changes).
+
+---
+
 ## v0.1.27
 
 ### Bug Fixes
